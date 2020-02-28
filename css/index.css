@@ -138,6 +138,7 @@ html {
 }
 html body {
   background-color: grey;
+  width: 100vw;
   border: 2px solid blue;
 }
 html body header {
@@ -150,7 +151,7 @@ html body header {
   background-color: green;
 }
 html body header h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: red;
   text-align: center;
 }
@@ -164,8 +165,12 @@ html body header .top {
 }
 html body header .top img {
   padding: 20px;
-  justify-content: start;
   border: 2px solid black;
+}
+html body header .top nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 html body header .top button {
   padding: 20px;
