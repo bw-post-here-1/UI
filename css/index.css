@@ -205,8 +205,8 @@ html body .everythingelse p {
   border: 2px solid black;
 }
 html body .everythingelse p img {
-  height: 100px;
-  width: 100px;
+  height: 50%;
+  width: 50%;
 }
 html body .everythingelse footer {
   margin-top: 50%;
