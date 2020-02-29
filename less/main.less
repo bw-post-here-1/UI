@@ -15,7 +15,7 @@ html {
             padding: 5%;
             background-color: green;
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 color: red;
                 text-align: center;
                 //border: 2px solid black;
@@ -32,6 +32,8 @@ html {
                 }
                 nav {
                     display:flex;
+                    //change to flex-direction: row for tablet and desktop
+                    flex-direction: column;
                     justify-content: center;
                     align-content: center;
                 }
@@ -57,8 +59,15 @@ html {
             background-position: center center;
             background-size: cover;
             p {
-                padding: 20px;
+                padding: 10%;
+                width: 65%;
+                height: 20%;
+                margin: 0 auto;
+                margin-top: 5%;
+                color: green;
+                background-color:black;
                 text-align: center;
+                border: 2px solid black;
             }
         } //end of everythingelse
 
