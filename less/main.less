@@ -52,6 +52,7 @@ html {
 
         .everythingelse {
             display: flex;
+            flex-direction: column;
             height: 100vh;
             border: 2px solid yellow;
             background-image: url("/images/logo2.jpg");
@@ -68,12 +69,19 @@ html {
                 background-color:black;
                 text-align: center;
                 border: 2px solid black;
+
+                img {
+                    height:100px;
+                    width: 100px;
+                }
+            }
+            footer {
+                margin-top: 50%;
+                color: purple;
+                text-align:center;
             }
         } //end of everythingelse
 
-        footer {
-            text-align:center;
-        }
     } //end of body
 
 } //end of html

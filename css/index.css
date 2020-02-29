@@ -185,6 +185,7 @@ html body header .top button {
 }
 html body .everythingelse {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   border: 2px solid yellow;
   background-image: url("/images/logo2.jpg");
@@ -203,6 +204,12 @@ html body .everythingelse p {
   text-align: center;
   border: 2px solid black;
 }
-html body footer {
+html body .everythingelse p img {
+  height: 100px;
+  width: 100px;
+}
+html body .everythingelse footer {
+  margin-top: 50%;
+  color: purple;
   text-align: center;
 }
