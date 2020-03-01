@@ -135,10 +135,12 @@ table {
 }
 html {
   font-family: 'Press Start 2P', sans-serif;
+  height: 100vh;
 }
 html body {
   background-color: grey;
   width: 100vw;
+  min-height: 100vh;
   border: 2px solid blue;
 }
 html body header {
@@ -220,7 +222,7 @@ html body header .top button {
 html body .everythingelse {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   border: 2px solid yellow;
   background-image: url("/images/logo2.jpg");
   background-repeat: no-repeat;
@@ -230,21 +232,22 @@ html body .everythingelse {
 html body .everythingelse p {
   padding: 10%;
   width: 65%;
-  height: 20%;
+  height: 20vh;
   margin: 0 auto;
   margin-top: 5%;
   color: green;
   background-color: black;
   text-align: center;
-  border: 2px solid black;
 }
 html body .everythingelse p img {
-  height: 50%;
-  width: 50%;
+  height: 10vh;
+  width: 10vh;
+  margin-bottom: 5%;
 }
 @media (min-width: 1000px) {
   html body .everythingelse p img {
-    height: 90%;
+    height: 30vh;
+    width: 30vh;
   }
 }
 @media (min-width: 1000px) {
@@ -254,11 +257,15 @@ html body .everythingelse p img {
 }
 html body .everythingelse footer {
   margin-top: 50%;
+  margin-bottom: 10%;
   color: purple;
   text-align: center;
 }
 @media (min-width: 1000px) {
   html body .everythingelse footer {
     margin-top: 10%;
+    margin-bottom: 10%;
   }
+}
+@media (min-width: 1000px) {
 }

@@ -1,9 +1,13 @@
 html {
     font-family: @main-font;
+    height: 100vh;
+    //min-height:100%;
 
     body {
         background-color: grey;
         width: 100vw;
+        //height: auto;
+        min-height: 100vh;
         //padding: 5px;
         
         border: 2px solid blue;
@@ -79,7 +83,7 @@ html {
         .everythingelse {
             display: flex;
             flex-direction: column;
-            height: 100vh;
+            min-height: 100vh;
             border: 2px solid yellow;
             background-image: url("/images/logo2.jpg");
             background-repeat: no-repeat;
@@ -88,20 +92,21 @@ html {
             p {
                 padding: 10%;
                 width: 65%;
-                height: 20%;
+                height: 20vh;
                 margin: 0 auto;
                 margin-top: 5%;
                 color: green;
                 background-color:black;
                 text-align: center;
-                border: 2px solid black;
+                //border: 2px solid blue;
 
                 img {
-                    height: 50%;
-                    width: 50%;
-
+                    height: 10vh;
+                    width: 10vh;
+                    margin-bottom: 5%;
                     @media @desktop {
-                        height: 90%
+                        height: 30vh;
+                        width: 30vh;
                     }
                 }
 
@@ -112,12 +117,18 @@ html {
             footer {
                 //eliminate or change margin on footer for tablet, desktop
                 margin-top: 50%;
+                margin-bottom: 10%;
                 color: purple;
                 text-align:center;
                 //border: 2px solid green;
                 @media @desktop {
                     margin-top: 10%;
+                    margin-bottom: 10%;
                 }
+            }
+            @media @desktop {
+                //height: 100%;
+                //background-size: contain;
             }
         } //end of everythingelse
 
