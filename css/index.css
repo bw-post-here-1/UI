@@ -251,14 +251,14 @@ html body .everythingelse p img {
 }
 @media (min-width: 800px) {
   html body .everythingelse p img {
-    height: 20vh;
     width: 20vh;
+    height: 20vh;
   }
 }
 @media (min-width: 1000px) {
   html body .everythingelse p img {
-    height: 20vh;
     width: 20vh;
+    height: 20vh;
   }
 }
 @media (min-width: 1000px) {
@@ -267,10 +267,12 @@ html body .everythingelse p img {
   }
 }
 html body .everythingelse footer {
-  margin-top: 50%;
+  margin: 0 auto;
+  margin-top: 60%;
   margin-bottom: 10%;
   color: purple;
   text-align: center;
+  width: 65vw;
 }
 @media (min-width: 800px) {
   html body .everythingelse footer {

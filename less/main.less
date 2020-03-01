@@ -33,8 +33,9 @@ html {
                 padding: 5%;
                 border: 2px solid yellow;
                 @media @desktop {
-                    width: 90%;
-                    height: 50%;
+                    // width: 90%;
+                    // height: 50%;
+                    .media-width-height(90%,50%);
                     flex-direction: column-reverse;
                 }
                 img {
@@ -43,8 +44,9 @@ html {
                     border: 2px solid black;
 
                     @media @desktop {
-                        width: 90vh;
-                        height: 50vh;
+                        // width: 90vh;
+                        // height: 50vh;
+                        .media-width-height(90vh,50vh);
                     }
                 }
                 nav {
@@ -111,12 +113,14 @@ html {
                     margin-bottom: 5%;
 
                     @media @tablet {
-                        height: 20vh;
-                        width: 20vh;
+                        // height: 20vh;
+                        // width: 20vh;
+                        .media-width-height(20vh,20vh);
                     }
                     @media @desktop {
-                        height: 20vh;
-                        width: 20vh;
+                        // height: 20vh;
+                        // width: 20vh;
+                        .media-width-height(20vh,20vh);
                     }
                 }
 
@@ -126,10 +130,12 @@ html {
             }
             footer {
                 //eliminate or change margin on footer for tablet, desktop
-                margin-top: 50%;
-                margin-bottom: 10%;
+                margin: 0 auto;
+                margin-top: 60%;
+                margin-bottom: 10%;                
                 color: purple;
                 text-align:center;
+                width: 65vw;
                 //border: 2px solid green;
                 @media @tablet {
                     margin: 0 auto;
