@@ -54,12 +54,17 @@ html {
                     justify-content: center;
                     //align-content: center;
 
+                    @media @tablet {
+                        flex-direction: row;
+                    }
+
                     @media @desktop {
                         flex-direction: row;
                         width: 90%;
                         justify-content: space-around;
                         padding: 5%;
                     }
+
                 }
                 button{
                     .center();
@@ -121,11 +126,18 @@ html {
                 color: purple;
                 text-align:center;
                 //border: 2px solid green;
+                @media @tablet {
+                    margin: 0 auto;
+                    margin-top: 10%;
+                    margin-bottom: 10%;
+                    width: 50vw;
+                }
                 @media @desktop {
                     margin-top: 10%;
                     margin-bottom: 10%;
                 }
             }
+
             @media @desktop {
                 //height: 100%;
                 //background-size: contain;

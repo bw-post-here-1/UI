@@ -192,6 +192,11 @@ html body header .top nav {
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 800px) {
+  html body header .top nav {
+    flex-direction: row;
+  }
+}
 @media (min-width: 1000px) {
   html body header .top nav {
     flex-direction: row;
@@ -260,6 +265,14 @@ html body .everythingelse footer {
   margin-bottom: 10%;
   color: purple;
   text-align: center;
+}
+@media (min-width: 800px) {
+  html body .everythingelse footer {
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50vw;
+  }
 }
 @media (min-width: 1000px) {
   html body .everythingelse footer {
