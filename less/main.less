@@ -18,26 +18,47 @@ html {
                 font-size: 2rem;
                 color: red;
                 text-align: center;
-                //border: 2px solid black;
+                
+                @media @desktop {
+                    font-size: 5rem;
+                }
             }
             .top {
                 .center();
                 flex-direction: column;
                 padding: 5%;
                 border: 2px solid yellow;
+                @media @desktop {
+                    width: 90%;
+                    height: 50%;
+                    flex-direction: column-reverse;
+                }
                 img {
                     //margin: 0 auto;
                     padding: 20px;
                     border: 2px solid black;
+
+                    @media @desktop {
+                        width: 90%;
+                        height: 50%;
+                    }
                 }
                 nav {
                     display:flex;
                     //change to flex-direction: row for tablet and desktop
                     flex-direction: column;
                     justify-content: center;
-                    align-content: center;
+                    //align-content: center;
+
+                    @media @desktop {
+                        flex-direction: row;
+                        width: 90%;
+                        justify-content: space-around;
+                        padding: 5%;
+                    }
                 }
                 button{
+                    .center();
                     padding: 20px;
                     height: 50px;
                     width: 150px;
@@ -46,6 +67,11 @@ html {
                     text-align:center;
                     border: 2px solid black;
                     border-radius: 5px;
+
+                    @media @desktop {
+                        height: 150px;
+                        width: 450px;
+                    }
                 }
             } //end of top
         } // end of header
@@ -73,12 +99,25 @@ html {
                 img {
                     height: 50%;
                     width: 50%;
+
+                    @media @desktop {
+                        height: 90%
+                    }
+                }
+
+                @media @desktop {
+                    width: 30%;
                 }
             }
             footer {
+                //eliminate or change margin on footer for tablet, desktop
                 margin-top: 50%;
                 color: purple;
                 text-align:center;
+                //border: 2px solid green;
+                @media @desktop {
+                    margin-top: 10%;
+                }
             }
         } //end of everythingelse
 
