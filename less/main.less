@@ -1,0 +1,160 @@
+html {
+    font-family: @main-font;
+    height: 100vh;
+    //min-height:100%;
+
+    body {
+        background-color: grey;
+        width: 100vw;
+        //height: auto;
+        min-height: 100vh;
+        //padding: 5px;
+        
+        border: 2px solid blue;
+
+        header {
+            border: 2px solid black;
+            .center();
+            flex-direction: column;
+            padding: 5%;
+            background-color: green;
+            h1 {
+                font-size: 2rem;
+                color: red;
+                text-align: center;
+                
+                @media @desktop {
+                    font-size: 5rem;
+                }
+            }
+            .top {
+                .center();
+                flex-direction: column;
+                padding: 5%;
+                border: 2px solid yellow;
+                @media @desktop {
+                    // width: 90%;
+                    // height: 50%;
+                    .media-width-height(90%,50%);
+                    flex-direction: column-reverse;
+                }
+                img {
+                    //margin: 0 auto;
+                    padding: 20px;
+                    border: 2px solid black;
+
+                    @media @desktop {
+                        // width: 90vh;
+                        // height: 50vh;
+                        .media-width-height(90vh,50vh);
+                    }
+                }
+                nav {
+                    display:flex;
+                    //change to flex-direction: row for tablet and desktop
+                    flex-direction: column;
+                    justify-content: center;
+                    //align-content: center;
+
+                    @media @tablet {
+                        flex-direction: row;
+                    }
+
+                    @media @desktop {
+                        flex-direction: row;
+                        width: 90%;
+                        justify-content: space-around;
+                        padding: 5%;
+                    }
+
+                }
+                button{
+                    .center();
+                    padding: 20px;
+                    height: 50px;
+                    width: 150px;
+                    font-family: @main-font;
+                    background-color: lightsalmon;
+                    text-align:center;
+                    border: 2px solid black;
+                    border-radius: 5px;
+
+                    @media @desktop {
+                        height: 150px;
+                        width: 450px;
+                    }
+                }
+            } //end of top
+        } // end of header
+
+        .everythingelse {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            border: 2px solid yellow;
+            background-image: url("/images/logo2.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            p {
+                padding: 10%;
+                width: 65%;
+                height: 20vh;
+                margin: 0 auto;
+                margin-top: 5%;
+                color: green;
+                background-color:black;
+                text-align: center;
+                //border: 2px solid blue;
+
+                img {
+                    height: 10vh;
+                    width: 10vh;
+                    margin-bottom: 5%;
+
+                    @media @tablet {
+                        // height: 20vh;
+                        // width: 20vh;
+                        .media-width-height(20vh,20vh);
+                    }
+                    @media @desktop {
+                        // height: 20vh;
+                        // width: 20vh;
+                        .media-width-height(20vh,20vh);
+                    }
+                }
+
+                @media @desktop {
+                    width: 30%;
+                }
+            }
+            footer {
+                //eliminate or change margin on footer for tablet, desktop
+                margin: 0 auto;
+                margin-top: 60%;
+                margin-bottom: 10%;                
+                color: purple;
+                text-align:center;
+                width: 65vw;
+                //border: 2px solid green;
+                @media @tablet {
+                    margin: 0 auto;
+                    margin-top: 10%;
+                    margin-bottom: 10%;
+                    width: 50vw;
+                }
+                @media @desktop {
+                    margin-top: 10%;
+                    margin-bottom: 10%;
+                }
+            }
+
+            @media @desktop {
+                //height: 100%;
+                //background-size: contain;
+            }
+        } //end of everythingelse
+
+    } //end of body
+
+} //end of html

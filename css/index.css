@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v8/e3t4euO8T-267oIAQAu6jDQyK3nVivY.ttf) format('truetype');
+}
+html {
+  font-family: 'Press Start 2P', sans-serif;
+  height: 100vh;
+}
+html body {
+  background-color: grey;
+  width: 100vw;
+  min-height: 100vh;
+  border: 2px solid blue;
+}
+html body header {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+  background-color: green;
+}
+html body header h1 {
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  html body header h1 {
+    font-size: 5rem;
+  }
+}
+html body header .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+  border: 2px solid yellow;
+}
+@media (min-width: 1000px) {
+  html body header .top {
+    width: 90%;
+    height: 50%;
+    flex-direction: column-reverse;
+  }
+}
+html body header .top img {
+  padding: 20px;
+  border: 2px solid black;
+}
+@media (min-width: 1000px) {
+  html body header .top img {
+    width: 90vh;
+    height: 50vh;
+  }
+}
+html body header .top nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 800px) {
+  html body header .top nav {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1000px) {
+  html body header .top nav {
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    padding: 5%;
+  }
+}
+html body header .top button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+  width: 150px;
+  font-family: 'Press Start 2P', sans-serif;
+  background-color: lightsalmon;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+@media (min-width: 1000px) {
+  html body header .top button {
+    height: 150px;
+    width: 450px;
+  }
+}
+html body .everythingelse {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border: 2px solid yellow;
+  background-image: url("/images/logo2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+html body .everythingelse p {
+  padding: 10%;
+  width: 65%;
+  height: 20vh;
+  margin: 0 auto;
+  margin-top: 5%;
+  color: green;
+  background-color: black;
+  text-align: center;
+}
+html body .everythingelse p img {
+  height: 10vh;
+  width: 10vh;
+  margin-bottom: 5%;
+}
+@media (min-width: 800px) {
+  html body .everythingelse p img {
+    width: 20vh;
+    height: 20vh;
+  }
+}
+@media (min-width: 1000px) {
+  html body .everythingelse p img {
+    width: 20vh;
+    height: 20vh;
+  }
+}
+@media (min-width: 1000px) {
+  html body .everythingelse p {
+    width: 30%;
+  }
+}
+html body .everythingelse footer {
+  margin: 0 auto;
+  margin-top: 60%;
+  margin-bottom: 10%;
+  color: purple;
+  text-align: center;
+  width: 65vw;
+}
+@media (min-width: 800px) {
+  html body .everythingelse footer {
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50vw;
+  }
+}
+@media (min-width: 1000px) {
+  html body .everythingelse footer {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+@media (min-width: 1000px) {
+}
