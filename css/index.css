@@ -282,9 +282,24 @@ html body .everythingelse form {
   background-color: black;
 }
 html body .everythingelse form div {
-  border: 2px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 5%;
-  width: 80%;
+}
+@media (min-width: 800px) {
+  html body .everythingelse form div {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1000px) {
+  html body .everythingelse form div {
+    flex-direction: row;
+    padding: 5%;
+    width: 90%;
+  }
 }
 html body .everythingelse footer {
   margin: 0 auto;

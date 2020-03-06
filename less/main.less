@@ -143,9 +143,25 @@ html {
                 background-color:black;
 
                 div {
-                    border: 2px solid yellow;
+                    .center();
+                    flex-direction: column;
+                    justify-content: space-between;
+                    //border: 2px solid yellow;
                     padding: 5%;
-                    width: 80%;
+                    // width: 80%;
+
+                    @media @tablet {
+                        //flex-direction: row;
+                        justify-content: space-around;
+                    }
+
+                    @media @desktop {
+                        //border: 2px solid yellow;
+                        flex-direction: row;
+                        padding: 5%;
+                        width: 90%;
+                    }
+
                 }
             }
             footer {
