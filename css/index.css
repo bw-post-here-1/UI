@@ -269,6 +269,23 @@ html body .everythingelse p img {
     width: 30%;
   }
 }
+html body .everythingelse form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10%;
+  color: green;
+  background-color: black;
+}
+html body .everythingelse form div {
+  border: 2px solid yellow;
+  padding: 5%;
+  width: 80%;
+}
 html body .everythingelse footer {
   margin: 0 auto;
   margin-top: 60%;
