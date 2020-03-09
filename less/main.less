@@ -79,6 +79,10 @@ html {
                     border: 2px solid black;
                     border-radius: 5px;
 
+                    &:hover{
+                        background-color: lightseagreen;
+                    }
+
                     @media @desktop {
                         height: 150px;
                         width: 450px;
@@ -126,6 +130,38 @@ html {
 
                 @media @desktop {
                     width: 30%;
+                }
+            }
+            form {
+                .center();
+                width: 75%;
+                margin: 0 auto;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 10%;
+                color: green;
+                background-color:black;
+
+                div {
+                    .center();
+                    flex-direction: column;
+                    justify-content: space-between;
+                    //border: 2px solid yellow;
+                    padding: 5%;
+                    // width: 80%;
+
+                    @media @tablet {
+                        //flex-direction: row;
+                        justify-content: space-around;
+                    }
+
+                    @media @desktop {
+                        //border: 2px solid yellow;
+                        flex-direction: row;
+                        padding: 5%;
+                        width: 90%;
+                    }
+
                 }
             }
             footer {

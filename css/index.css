@@ -218,6 +218,9 @@ html body header .top button {
   border: 2px solid black;
   border-radius: 5px;
 }
+html body header .top button:hover {
+  background-color: lightseagreen;
+}
 @media (min-width: 1000px) {
   html body header .top button {
     height: 150px;
@@ -264,6 +267,38 @@ html body .everythingelse p img {
 @media (min-width: 1000px) {
   html body .everythingelse p {
     width: 30%;
+  }
+}
+html body .everythingelse form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10%;
+  color: green;
+  background-color: black;
+}
+html body .everythingelse form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+}
+@media (min-width: 800px) {
+  html body .everythingelse form div {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1000px) {
+  html body .everythingelse form div {
+    flex-direction: row;
+    padding: 5%;
+    width: 90%;
   }
 }
 html body .everythingelse footer {
